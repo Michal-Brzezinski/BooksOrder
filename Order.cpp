@@ -1,6 +1,6 @@
 #include "Order.hpp"
 
-Order::Order() {
+Order::Order(int number): order_nr(number) {
 
 }
 
@@ -9,19 +9,26 @@ void Order::calculate_total_price(bool with_deliv = true)
 {
 	float suma = 0;
 	
-	for (int i = 0; i < list_of_books.size(); i++)
+	for (Book& book : list_of_books)
 	{
-		suma += list_of_books.at(i).get_price();
+		suma += book.get_price();
 	}
 
 	if (with_deliv == true)
 	{
 		suma += delivery_cost;
-		cout << "\nKoszt calkowity zamowienia z dostawa to: " << suma << endl;
+		cout << "\nKoszt calkowity zamowienia nr " << get_orderNr() <<" z dostawa to: " << suma << endl;
 	}
 
-	else cout << "\nKoszt calkowity zamowienia bez dostawy to to: " << suma << endl;
+	else cout << "\nKoszt calkowity zamowienia nr " << get_orderNr() << " bez dostawy to to: " << suma << endl;
 }
+
+
+int Order::get_orderNr()
+{
+	return order_nr;
+}
+
 
 void Order::operator+=(const Book& book) {
 	
@@ -41,10 +48,15 @@ void Order::operator+=(const Book& book) {
 		list_of_books.push_back(book);
 }
 
-void Order::displayOrder() const {
-	cout << "Zamowienie zawiera ksiazki:" << endl;
+void Order::displayOrder() {
+	cout << "\n\nZamowienie nr "<< get_orderNr() <<" zawiera ksiazki:" << endl;
+	
+	int i = 1;
+
 	for (const Book& book : list_of_books) {
-		cout << "Tytul: " << book.get_title() << ", Cena: " << book.get_price() << ", Ilosc: " << book.get_quantity() << endl;
+		
+		cout <<i<<". Tytul: " << book.get_title() << ", Cena: " << book.get_price() << ", Ilosc: " << book.get_quantity() << endl;
+		i++;
 	}
 }
 
