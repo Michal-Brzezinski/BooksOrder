@@ -39,3 +39,32 @@ int main()
 	order3.calculate_total_price(false);
 }
 
+/*THERE IS AN OUTPUT:
+
+Zamowienie nr 1 zawiera ksiazki:
+1. Tytul: Nowa nadzieja, Cena: 27.99, Ilosc: 1
+2. Tytul: Stara nadzieja, Cena: 29.99, Ilosc: 3
+3. Tytul: Kot i pies, Cena: 15.99, Ilosc: 1
+
+Koszt calkowity zamowienia nr 1 z dostawa to: 89.52
+
+Koszt calkowity zamowienia nr 1 bez dostawy to to: 73.97
+
+
+Zamowienie nr 2 zawiera ksiazki:
+1. Tytul: Stara nadzieja, Cena: 29.99, Ilosc: 2
+2. Tytul: Kot i pies, Cena: 15.99, Ilosc: 2
+
+Koszt calkowity zamowienia nr 2 z dostawa to: 61.53
+
+Koszt calkowity zamowienia nr 2 bez dostawy to to: 45.98
+
+
+Zamowienie nr 3 zawiera ksiazki:
+1. Tytul: Egologia w ujeciu psychoneurotycznym, Cena: 56.99, Ilosc: 1
+
+Koszt calkowity zamowienia nr 3 z dostawa to: 72.54
+
+Koszt calkowity zamowienia nr 3 bez dostawy to to: 56.99
+
+*/

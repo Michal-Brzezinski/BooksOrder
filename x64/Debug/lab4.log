@@ -1,3 +1,11 @@
-﻿  Order.cpp
+﻿  Book.cpp
+C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\Book.cpp(5,45): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Order.cpp
 C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\Order.hpp(10,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+  lab4.cpp
+C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\Order.hpp(10,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\lab4.cpp(7,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\lab4.cpp(8,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\lab4\lab4.cpp(10,49): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
   lab4.vcxproj -> C:\Users\Michał\OneDrive\Pulpit\polisacharyd_krakowski\zadania\JiPP2\lab4\x64\Debug\lab4.exe
